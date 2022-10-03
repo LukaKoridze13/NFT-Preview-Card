@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+
 main {
     width: 100vw;
     height: 100vh;
@@ -12,6 +13,7 @@ main {
 }
 
 .card {
+    position: relative;
     height: 596px;
     width: 350px;
     border-radius: 15px;
@@ -24,4 +26,140 @@ main {
     height: 302px;
     width: 302px;
     border-radius: 8px;
+    cursor: pointer;
+}
+
+h1 {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 28px;
+    color: #FFFFFF;
+    margin-top: 24px;
+    cursor: pointer;
+}
+h1:hover{
+    color: #00FFF8;
+}
+.desc {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 26px;
+    margin-top: 16px;
+    color: #8BACD9;
+}
+
+.info {
+    margin-top: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #2E405A;
+    ;
+}
+
+.price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.priceTxt {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+
+    /* Cyan */
+    margin-left: 6.49px;
+    color: #00FFF8;
+}
+
+.time {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.timer {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+
+    /* Soft Blue */
+    margin-left: 9px;
+    color: #8BACD9;
+}
+
+.creator {
+    margin-top: 16px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.avatar {
+    height: 33px;
+    width: 33px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    border: 1px solid #FFFFFF;
+}
+
+.name {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #8BACD9;
+    margin-left: 16px;
+}
+
+.name span {
+    color: #FFFFFF;
+    cursor: pointer;
+}
+.name span:hover {
+    color: #00FFF8;
+}
+.hoverCyan {
+    position: absolute;
+    left: 50%;
+    top: 24px;
+    width: 302px;
+    height: 302px;
+    border-radius: 8px;
+    background: rgba(0, 255, 247, 0.5);
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+.equilibrium:hover ~ .hoverCyan{
+    display: flex;
+}
+
+@media (max-width:375px) {
+    main{
+        padding: 24px;
+    }
+    .card{
+        width: 100%;
+        padding: 24px;
+    }
+    .hoverCyan{
+        width: 74.4vw;
+    }
+    .equilibrium{
+        width: 100%;
+    }
 }

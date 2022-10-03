@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+main {
+    width: 100vw;
+    height: 100vh;
+    background-color: hsl(217, 54%, 11%);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'Outfit', sans-serif;
+}
+
+.card {
+    height: 596px;
+    width: 350px;
+    border-radius: 15px;
+    background: #15263F;
+    box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.0952917);
+    padding: 24px;
+}
+
+.equilibrium {
+    height: 302px;
+    width: 302px;
+    border-radius: 8px;
+}
